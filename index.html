@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<body>
+    <div class="container-sm">
+        <div class="div1">
+            <h1>JavaScript Calculator</h1>
+            <hr>
+        </div>
+
+        <table class="table">
+            <tr class="">
+                <td>
+                    <label for="num1">Number1</label>
+                    <br>
+                    <input type="text" name="num1" id="n1">
+                </td>
+                <td>
+                    <label for="operator">operator</label>
+                    <br>
+                    <select name="operator" id="opt">
+                        <option value="add" style="background-color:rgb(229, 226, 226) ;"> + </option>
+                        <option value="sub" style="background-color:rgb(229, 226, 226) ;"> - </option>
+                        <option value="mult" style="background-color:rgb(229, 226, 226) ;"> * </option>
+                        <option value="div" style="background-color:rgb(229, 226, 226) ;"> / </option>
+                        <option value="mod" style="background-color:rgb(229, 226, 226) ;"> % </option>
+                    </select>
+                </td>
+                <td>
+                    <label for="num2">Number2</label>
+                    <br>
+                    <input type="text" name="num2" id="n2">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="d-grid container">
+        <button class="btn btn-primary" onclick="num()" onblur="clr();">Submit</button><br>
+        <div id="ansBox">
+            <label for="answer">Answer</label><br>
+            <input type="number" name="answer" id="ans" readonly style="background-color:rgb(229, 226, 226) ;">
+        </div>
+    </div>
+</body>
+
+</html>
